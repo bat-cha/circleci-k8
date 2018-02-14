@@ -1,9 +1,11 @@
-FROM alpine:latest
+FROM alpine:edge
 LABEL maintainer="bat-cha <baptiste.chatrain@gmail.com>"
 
 VOLUME ${HOME}/.aws
+VOLUME /app
+WORKDIR /app
 
-RUN apk add --no-cache \
+RUN apk update && apk add --no-cache \
     python3 \
     py3-pip \
     docker \
