@@ -156,6 +156,4 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
-.idea/circleci-k8.iml
-.idea/inspectionProfiles/
-.idea/modules.xml
+.idea/vcs.xml

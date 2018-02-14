@@ -13,6 +13,7 @@ RUN apk update && apk add --no-cache \
     openssh \
     terraform \
     jq \
+    gettext \
     && pip3 install --upgrade awscli
 
 # https://github.com/kubernetes/kops/releases
