@@ -19,12 +19,12 @@ RUN apk update && apk add --no-cache \
     && pip3 install --upgrade awscli
 
 # https://github.com/kubernetes/kops/releases
-ENV KOPS_VERSION=1.8.1
+ENV KOPS_VERSION=1.9.0-alpha.1
 # https://kubernetes.io/docs/tasks/kubectl/install/
 # latest stable kubectl: curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
-ENV KUBECTL_VERSION=v1.9.3
+ENV KUBECTL_VERSION=v1.9.4
 # https://github.com/kubernetes/helm/releases
-ENV HELM_VERSION=v2.8.1
+ENV HELM_VERSION=v2.8.2
 
 RUN apk --no-cache add ca-certificates \
   && apk --no-cache add --virtual build-dependencies curl \
