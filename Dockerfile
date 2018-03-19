@@ -9,6 +9,7 @@ RUN apk update && apk add --no-cache \
     bash \
     python3 \
     py3-pip \
+    go \
     docker \
     git \
     openssl \
