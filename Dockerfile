@@ -27,6 +27,7 @@ RUN apk upgrade --update-cache --available \
       openssh \
       terraform \
       jq \
+      make \
       gettext \
     && pip3 install --upgrade pip \
     && pip3 install --upgrade awscli \
