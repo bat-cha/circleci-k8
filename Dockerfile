@@ -12,7 +12,7 @@ ENV KOPS_VERSION=1.9.0-beta.2
 ENV KUBECTL_VERSION=v1.10.0
 # https://github.com/kubernetes/helm/releases
 ENV HELM_VERSION=v2.8.2
-
+# everything needed for a circleci k8s deployment (on aws)
 RUN apk upgrade --update-cache --available \
     && apk update \
     && apk add --no-cache \
