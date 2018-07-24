@@ -6,7 +6,7 @@ VOLUME /app
 WORKDIR /app
 
 # https://github.com/kubernetes/kops/releases
-ENV KOPS_VERSION=1.9.1
+ENV KOPS_VERSION=1.9.2
 # https://kubernetes.io/docs/tasks/kubectl/install/
 # latest stable kubectl: curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
 ENV KUBECTL_VERSION=v1.11.1
