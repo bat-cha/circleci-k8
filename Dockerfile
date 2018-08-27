@@ -6,12 +6,12 @@ VOLUME /app
 WORKDIR /app
 
 # https://github.com/kubernetes/kops/releases
-ENV KOPS_VERSION=1.9.2
+ENV KOPS_VERSION=1.10.0
 # https://kubernetes.io/docs/tasks/kubectl/install/
 # latest stable kubectl: curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt
 ENV KUBECTL_VERSION=v1.11.2
 # https://github.com/kubernetes/helm/releases
-ENV HELM_VERSION=v2.9.1
+ENV HELM_VERSION=v2.10.0
 # everything needed for a circleci k8s deployment (on aws)
 RUN apk upgrade --update-cache --available \
     && apk update \
